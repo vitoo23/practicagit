@@ -1,5 +1,6 @@
 package frase;
 import java.util.Scanner;
+import java.util.ArrayList;
 public class Frase {
 
 	public static void main(String[] args) {
@@ -10,10 +11,16 @@ public class Frase {
 		
 		int[] qtat = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 		
+		int contador = 0;
+		
 		for (int i = 0; i < frase.length() ; i++) {
 			for (int j = 0; j < lletres.length ; j++) {
 				if (lletres[j] == frase.charAt(i)){
 					qtat[j]++;
+					if (frase.charAt(i) == '1' || frase.charAt(i) == '2' || frase.charAt(i)== '3' || frase.charAt(i) == '4' || frase.charAt(i) == '5'||
+						frase.charAt(i)== '6' || frase.charAt(i) == '7' || frase.charAt(i) == '8' || frase.charAt(i) == '9' || frase.charAt(i) == '0'){
+							contador++;
+					}
 				}
 				
 			}
