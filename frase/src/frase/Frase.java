@@ -2,7 +2,7 @@ package frase;
 import java.util.Scanner;
 import java.util.ArrayList;
 public class Frase {
-
+//comentari1
 	public static void main(String[] args) {
 		Scanner lector = new Scanner (System.in);
 		System.out.println("Escriu una frase: ");
